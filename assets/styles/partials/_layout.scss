@@ -1,0 +1,22 @@
+.app {
+  @apply max-w-[1080px] my-0 mx-auto h-screen;
+  @apply grid grid-cols-[2fr_5fr_3fr] grid-rows-[auto_1fr];
+  .logo {
+    @apply pr-4 pt-4 border-b border-transparent;
+  }
+  .title {
+    @apply p-4 border-x border-b border-gray-600;
+  }
+  .search {
+    @apply pl-4 pt-3 border-b border-transparent;
+  }
+  .menu {
+    @apply pr-4 pt-5;
+  }
+  .main {
+    @apply border-x border-gray-600;
+  }
+  .aside {
+    @apply pl-4 pt-4;
+  }
+}

@@ -1,0 +1,23 @@
+.menu {
+  .menu_items {
+    @apply space-y-6;
+    .menu_item {
+      @apply flex gap-4 items-center;
+      @apply text-gray-500;
+      &.active {
+        @apply text-white;
+      }
+      .icon {
+        path {
+          @apply fill-current;
+        }
+      }
+      .label {
+      }
+    }
+  }
+
+  .button {
+    @apply mt-10 flex sticky top-4;
+  }
+}

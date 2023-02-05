@@ -1,0 +1,10 @@
+html,
+body {
+  @apply bg-black text-white;
+  @apply snap-y;
+}
+
+.button {
+  @apply inline-flex justify-center rounded-full px-8 py-2;
+  @apply bg-blue-500 text-white;
+}

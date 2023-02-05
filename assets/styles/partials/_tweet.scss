@@ -1,0 +1,56 @@
+.tweet {
+  @apply flex gap-6 p-4 border-b border-gray-600;
+  @apply snap-start -scroll-m-1;
+  .user_pic {
+    @apply w-11 h-11 rounded-full overflow-hidden shrink-0;
+  }
+  .tweet_content {
+    @apply space-y-4;
+    .tweet_content_header {
+      @apply flex gap-3 mt-3 text-gray-400;
+      .name {
+        @apply text-white font-semibold;
+      }
+      .nick {
+      }
+      .separator {
+      }
+      .date {
+      }
+    }
+    .tweet_content_body {
+    }
+    .tweet_content_footer {
+      @apply flex gap-4 items-center text-gray-400;
+      .footer_item {
+        @apply flex gap-2 items-center;
+        .heart {
+          @apply overflow-visible;
+          path {
+            @apply fill-none stroke-1 stroke-slate-500;
+          }
+        }
+        .retweet {
+          path {
+            @apply fill-slate-500;
+          }
+        }
+        .comment {
+          @apply overflow-visible;
+          path {
+            @apply fill-none stroke-1 stroke-slate-500;
+          }
+        }
+      }
+    }
+  }
+  &.liked {
+    .tweet_content .tweet_content_footer .footer_item {
+      .heart {
+        path {
+          @apply fill-red-500 stroke-none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "lib/mixins";
+@import "lib/fontface";
+
+@import "partials/base";
+@import "partials/layout";
+@import "partials/title";
+@import "partials/search";
+@import "partials/aside";
+@import "partials/menu";
+@import "partials/tweet_form";
+@import "partials/tweet";
+
+* {
+  @apply border border-pink-500;
+}

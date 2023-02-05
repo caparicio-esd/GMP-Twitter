@@ -1,0 +1,9 @@
+.title {
+  @apply flex justify-between items-center snap-start;
+  .stars {
+    @apply text-yellow-500;
+    path {
+      @apply fill-current;
+    }
+  }
+}
