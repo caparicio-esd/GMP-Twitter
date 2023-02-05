@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <script type="module" crossorigin src="/GMP-Twitter/assets/index-eb75cab2.js"></script>
-    <link rel="stylesheet" href="/GMP-Twitter/assets/index-09b88f20.css">
+    <script type="module" crossorigin src="/GMP-Twitter/assets/index-7f17c3af.js"></script>
+    <link rel="stylesheet" href="/GMP-Twitter/assets/index-021a1692.css">
   </head>
   <body>
     <div class="app">
@@ -191,6 +191,14 @@
           <form class="tweet_form_content">
             <textarea placeholder="hola"></textarea>
             <div class="tweet_form_content_footer">
+              <div class="counter">
+                <svg class="circles" width="40" height="40" viewBox="0 0 40 40">
+                  <circle class="bg" cx="20" cy="20" r="15" stroke-width="3" stroke="white"/>
+                  <circle class="progress" cx="20" cy="20" r="15" stroke-width="3" stroke="white"/>
+                  <circle class="too_much" cx="20" cy="20" r="15" stroke-width="3" stroke="white"/>
+                </svg>
+                <div class="amount">0</div>
+              </div>
               <div class="button">Tweet</div>
             </div>
           </form>
@@ -273,6 +281,28 @@
         </div>
       </main>
       <aside class="aside">aside</aside>
+      <div class="modal_tweet">
+        <div class="tweet_form">
+          <div class="user_pic">
+            <img src="/GMP-Twitter/images/user.jpg" alt="user" />
+          </div>
+          <form class="tweet_form_content">
+            <textarea placeholder="hola"></textarea>
+            <div class="tweet_form_content_footer">
+              <div class="counter">
+                <svg class="circles" width="40" height="40" viewBox="0 0 40 40">
+                  <circle class="bg" cx="20" cy="20" r="15" stroke-width="3" stroke="white"/>
+                  <circle class="progress" cx="20" cy="20" r="15" stroke-width="3" stroke="white"/>
+                  <circle class="too_much" cx="20" cy="20" r="15" stroke-width="3" stroke="white"/>
+                </svg>
+                <div class="amount">0</div>
+              </div>
+        
+              <div class="button">Tweet</div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
     
   </body>
