@@ -189,6 +189,14 @@
           <form class="tweet_form_content">
             <textarea placeholder="hola"></textarea>
             <div class="tweet_form_content_footer">
+              <div class="counter">
+                <svg class="circles" width="40" height="40" viewBox="0 0 40 40">
+                  <circle class="bg" cx="20" cy="20" r="15" stroke-width="3" stroke="white"/>
+                  <circle class="progress" cx="20" cy="20" r="15" stroke-width="3" stroke="white"/>
+                  <circle class="too_much" cx="20" cy="20" r="15" stroke-width="3" stroke="white"/>
+                </svg>
+                <div class="amount">0</div>
+              </div>
               <div class="button">Tweet</div>
             </div>
           </form>
@@ -271,6 +279,28 @@
         </div>
       </main>
       <aside class="aside">aside</aside>
+      <div class="modal_tweet">
+        <div class="tweet_form">
+          <div class="user_pic">
+            <img src="/images/user.jpg" alt="user" />
+          </div>
+          <form class="tweet_form_content">
+            <textarea placeholder="hola"></textarea>
+            <div class="tweet_form_content_footer">
+              <div class="counter">
+                <svg class="circles" width="40" height="40" viewBox="0 0 40 40">
+                  <circle class="bg" cx="20" cy="20" r="15" stroke-width="3" stroke="white"/>
+                  <circle class="progress" cx="20" cy="20" r="15" stroke-width="3" stroke="white"/>
+                  <circle class="too_much" cx="20" cy="20" r="15" stroke-width="3" stroke="white"/>
+                </svg>
+                <div class="amount">0</div>
+              </div>
+        
+              <div class="button">Tweet</div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
     <script type="module" src="/app/main.js"></script>
   </body>

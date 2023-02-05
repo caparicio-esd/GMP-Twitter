@@ -1,0 +1,9 @@
+.modal_tweet {
+    @apply bg-slate-800 bg-opacity-75 backdrop-blur-sm    ;
+    @apply fixed top-0 left-0 w-screen h-screen;
+    @apply flex items-center justify-center;
+    .tweet_form {
+        @apply min-w-[650px] p-12 border-0;
+        @apply shadow-sm;
+    }
+}

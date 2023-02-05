@@ -13,7 +13,9 @@
 @import "partials/menu";
 @import "partials/tweet_form";
 @import "partials/tweet";
+@import "partials/modal_tweet";
 
 * {
-  @apply border border-pink-500;
+  // @apply border border-pink-500;
 }
+

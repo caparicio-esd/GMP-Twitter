@@ -9,7 +9,30 @@
       @apply w-full bg-transparent outline-none;
     }
     .tweet_form_content_footer {
-      @apply flex flex-row-reverse mt-6;
+      @apply flex mt-6 gap-4 justify-end;
+
+      .counter {
+        @apply relative;
+        .circles {
+          .bg {
+            @apply stroke-[3px] stroke-blue-500 opacity-40;
+          }
+          .progress {
+            @apply stroke-[3px] stroke-blue-500;
+            stroke-dashoffset: -1;
+            stroke-dasharray: 0 95;
+          }
+          .too_much {
+            @apply stroke-[3px] stroke-red-500;
+            stroke-dashoffset: -1;
+            stroke-dasharray: 0 95;
+          }
+        }
+        .amount {
+          @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+          @apply text-base;
+        }
+      }
     }
   }
 }
